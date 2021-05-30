@@ -1,5 +1,6 @@
 **Forked from txn2/txwifi on 20210530**: new docker golang 1.15-alpine3.12, wificfg.json extended to specify hw_mode (5 GHz / hw_mode=a).
 Install: 
+```bash
 git clone https://github.com/peteho/txwifi.git
 cd txwifi
 make
@@ -7,6 +8,7 @@ docker run --restart unless-stopped -d --privileged --net host \
            -v /opt/loragw//wificfg.json:/cfg/wificfg.json \ 
            -v /etc/wpa_supplicant/wpa_supplicant.conf:/etc/wpa_supplicant/wpa_supplicant.conf \ 
            peteho/iotwifi
+```
 
 **Update - 20180601**: Any future development will happen on this new fork. Hoping add stability as well as new SOCs. If you are interesrted in joining the [txn2](https://txn2.com) team please email human@txn2.com.
 
