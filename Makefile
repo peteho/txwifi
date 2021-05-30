@@ -23,4 +23,3 @@ dev_run:
                    -w /go/src/github.com/peteho/txwifi \
                    --name=$(NAME) $(IMAGE):latest
 
-
