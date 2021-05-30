@@ -22,7 +22,7 @@ func (c *Command) RemoveApInterface() {
 
 // ConfigureApInterface configured the AP interface.
 func (c *Command) ConfigureApInterface() {
-	cmd := exec.Command("ifconfig", "uap0", c.SetupCfg.HostApdCfg.Ip)
+	cmd := exec.Command("ifconfig", "uap0", c.SetupCfg.HostApdCfg.Ip, c.SetupCfg.HostApdCfg.Mask)
 	cmd.Start()
 	cmd.Wait()
 }
