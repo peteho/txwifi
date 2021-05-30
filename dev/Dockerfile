@@ -6,7 +6,7 @@ RUN apk add alpine-sdk go bridge hostapd wireless-tools wireless-tools-dev wpa_s
 RUN mkdir -p /etc/wpa_supplicant/
 COPY ./configs/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf
 
-RUN mkdir -p /go/src/github.com/tnx2/txwifi/
+RUN mkdir -p /go/src/github.com/peteho/txwifi/
 
 ENV GOPATH /go
 WORKDIR /go/src
