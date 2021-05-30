@@ -4,9 +4,9 @@ Install:
 git clone https://github.com/peteho/txwifi.git
 cd txwifi
 make
-docker run --restart unless-stopped -d --privileged --net host \ 
-           -v /opt/loragw//wificfg.json:/cfg/wificfg.json \ 
-           -v /etc/wpa_supplicant/wpa_supplicant.conf:/etc/wpa_supplicant/wpa_supplicant.conf \ 
+docker run --restart unless-stopped -d --privileged --net host \
+           -v /opt/loragw//wificfg.json:/cfg/wificfg.json \
+           -v /etc/wpa_supplicant/wpa_supplicant.conf:/etc/wpa_supplicant/wpa_supplicant.conf \
            peteho/iotwifi
 ```
 
