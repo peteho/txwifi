@@ -19,8 +19,8 @@ dev_build:
 
 dev_run:
 	sudo docker run --rm -it --privileged --network=host \
-                   -v $(CURDIR):/go/src/github.com/txn2/txwifi \
-                   -w /go/src/github.com/txn2/txwifi \
+                   -v $(CURDIR):/go/src/github.com/peteho/txwifi \
+                   -w /go/src/github.com/peteho/txwifi \
                    --name=$(NAME) $(IMAGE):latest
 
 
