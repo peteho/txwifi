@@ -20,6 +20,7 @@ type HostApdCfg struct {
 	WpaPassphrase string `json:"wpa_passphrase"` // wpa_passphrase=iotwifipass
 	Channel       string `json:"channel"`        //  channel=6
 	Ip            string `json:"ip"`             // 192.168.27.1
+	Mask          string `json:"mask"`           // 255.255.255.0
 	HwMode        string `json:"hw_mode"`        // 2,4 or 5 GHz -> g or a
 }
 
