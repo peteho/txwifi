@@ -8,7 +8,7 @@ COPY . /go/src/github.com/peteho/txwifi
 
 RUN CGO_ENABLED=0 go build -a -installsuffix cgo -o /go/bin/wifi /go/src/github.com/peteho/txwifi/main.go
 
-FROM arm32v6/alpine
+FROM arm32v6/alpine:3.7
 
 RUN apk update
 RUN apk add bridge hostapd wireless-tools wpa_supplicant dnsmasq iw
