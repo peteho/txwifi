@@ -6,6 +6,7 @@
     },
     "host_apd_cfg": {
 	"ip": "192.168.27.1",
+	"mask": "255.255.255.0",
 	"ssid": "iot-wifi-cfg-3",
 	"wpa_passphrase":"iotwifipass",
 	"hw_mode": "a",
