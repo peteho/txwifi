@@ -1,4 +1,4 @@
-IMAGE    ?= cjimti/iotwifi
+IMAGE    ?= peteho/iotwifi
 NAME     ?= txwifi
 VERSION  ?= 1.0.4
 
