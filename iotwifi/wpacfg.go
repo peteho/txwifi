@@ -94,7 +94,7 @@ func (wpa *WpaCfg) StartAP() {
 
 	cfg := `interface=uap0
 ssid=` + wpa.WpaCfg.HostApdCfg.Ssid + `
-hw_mode=g
+hw_mode=` + wpa.WpaCfg.HostApdCfg.HwMode + `
 channel=` + wpa.WpaCfg.HostApdCfg.Channel + `
 macaddr_acl=0
 auth_algs=1
